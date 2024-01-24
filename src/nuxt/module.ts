@@ -13,6 +13,7 @@ export default defineNuxtModule<ModuleOptions>({
   setup(options, nuxt) {
     const { resolve } = createResolver(import.meta.url)
 
+    console.log('test')
     // Push options and merge to runtimeConfig
     nuxt.options.runtimeConfig.motion = defu(nuxt.options.runtimeConfig?.motion || {}, options)
 

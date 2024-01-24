@@ -50,6 +50,7 @@
         "tabWidth": 2,
         "trailingComma": "all"
       }
-    ]
+    ],
+    "prefer-global/process": "off"
   }
 }

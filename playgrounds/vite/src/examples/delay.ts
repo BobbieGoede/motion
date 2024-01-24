@@ -7,7 +7,7 @@ export default () => `
     :enter="{
         y: 0,
         transition: {
-            repeat: Infinity,
+            repeat: Number.POSITIVE_INFINITY,
             repeatType: 'mirror',
             repeatDelay: 1000,
         },
@@ -23,7 +23,7 @@ export default () => `
     :enter="{
         y: 0,
         transition: {
-            repeat: Infinity,
+            repeat: Number.POSITIVE_INFINITY,
             repeatType: 'mirror',
             repeatDelay: 1000,
         },

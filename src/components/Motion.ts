@@ -108,7 +108,7 @@ export default defineComponent({
 
       if (props.delay) {
         config.enter.transition = { ...config.enter.transition } || {}
-        config.enter.transition.delay = parseInt(props.delay as string)
+        config.enter.transition.delay = Number.parseInt(props.delay as string)
       }
       return config
     })

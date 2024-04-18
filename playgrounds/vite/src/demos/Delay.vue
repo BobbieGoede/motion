@@ -17,7 +17,7 @@ const codeText = computed(() => delay())
         :enter="{
           y: 0,
           transition: {
-            repeat: Infinity,
+            repeat: Number.POSITIVE_INFINITY,
             repeatType: 'mirror',
             repeatDelay: 1000,
           },
@@ -33,7 +33,7 @@ const codeText = computed(() => delay())
         :enter="{
           y: 0,
           transition: {
-            repeat: Infinity,
+            repeat: Number.POSITIVE_INFINITY,
             repeatType: 'mirror',
             repeatDelay: 1000,
           },
@@ -50,7 +50,7 @@ const codeText = computed(() => delay())
         :enter="{
           y: 0,
           transition: {
-            repeat: Infinity,
+            repeat: Number.POSITIVE_INFINITY,
             repeatType: 'mirror',
             repeatDelay: 1000,
           },
@@ -67,7 +67,7 @@ const codeText = computed(() => delay())
         :enter="{
           y: 0,
           transition: {
-            repeat: Infinity,
+            repeat: Number.POSITIVE_INFINITY,
             repeatType: 'mirror',
             repeatDelay: 1000,
           },

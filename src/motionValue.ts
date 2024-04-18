@@ -5,7 +5,7 @@ import type { StartAnimation, Subscriber } from './types'
 import { SubscriptionManager } from './utils/subscription-manager'
 
 function isFloat(value: any): value is string {
-  return !isNaN(parseFloat(value))
+  return !Number.isNaN(Number.parseFloat(value))
 }
 
 /**
@@ -131,8 +131,8 @@ export class MotionValue<V = any> {
    */
   getVelocity() {
     // This could be isFloat(this.prev) && isFloat(this.current), but that would be wasteful
-    // These casts could be avoided if parseFloat would be typed better
-    return this.canTrackVelocity ? velocityPerSecond(parseFloat(this.current as any) - parseFloat(this.prev as any), this.timeDelta) : 0
+    // These casts could be avoided if Number.parseFloat would be typed better
+    return this.canTrackVelocity ? velocityPerSecond(Number.parseFloat(this.current as any) - Number.parseFloat(this.prev as any), this.timeDelta) : 0
   }
 
   /**

@@ -5,12 +5,15 @@ on:
       - '**'
     tags:
       - '!**'
+  pull_request_review:
+    types: [submitted]
   pull_request:
     branches:
       - main
 
 jobs:
   release:
+    if: github.event.review.state == 'APPROVED'
     runs-on: ubuntu-latest
 
     steps:

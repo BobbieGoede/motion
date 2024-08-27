@@ -17,6 +17,8 @@ export default defineNuxtModule<ModuleOptions>({
     // Push options and merge to runtimeConfig
     nuxt.options.runtimeConfig.public.motion = defu(nuxt.options.runtimeConfig.public.motion || {}, options)
 
+    // eslint-disable-next-line no-console
+    console.log('hello world!')
     // Add templates (options and directives)
     addPlugin(resolve('./runtime/templates/motion'))
 

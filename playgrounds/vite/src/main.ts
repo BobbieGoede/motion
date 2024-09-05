@@ -1,4 +1,4 @@
-import { MotionPlugin } from '@vueuse/motion'
+import { MotionPlugin } from '@goede/motion'
 import 'prism-theme-vars/base.css'
 import { createApp } from 'vue'
 import 'windi.css'

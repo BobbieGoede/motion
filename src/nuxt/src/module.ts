@@ -7,7 +7,7 @@ export interface ModuleOptions extends MotionModuleOpts<string> {}
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
-    name: '@vueuse/motion',
+    name: '@goede/motion',
     configKey: 'motion',
   },
   defaults: {},
@@ -27,19 +27,19 @@ export default defineNuxtModule<ModuleOptions>({
     addComponent({
       name: 'Motion',
       export: 'MotionComponent',
-      filePath: '@vueuse/motion',
+      filePath: '@goede/motion',
     })
 
     addComponent({
       name: 'MotionGroup',
       export: 'MotionGroupComponent',
-      filePath: '@vueuse/motion',
+      filePath: '@goede/motion',
     })
 
     // Transpile necessary packages
     if (!nuxt.options.build.transpile)
       nuxt.options.build.transpile = []
-    const transpileList = ['defu', '@vueuse/motion', '@vueuse/shared', '@vueuse/core']
+    const transpileList = ['defu', '@goede/motion', '@vueuse/shared', '@vueuse/core']
     transpileList.forEach((pkgName) => {
       if (!nuxt.options.build.transpile.includes(pkgName))
         nuxt.options.build.transpile.push(pkgName)

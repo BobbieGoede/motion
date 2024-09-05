@@ -7,7 +7,7 @@
     "prepare:docs": "nuxt prepare"
   },
   "dependencies": {
-    "@vueuse/motion": "workspace:~"
+    "@goede/motion": "workspace:~"
   },
   "devDependencies": {
     "@nuxt-themes/docus": "^1.15.0",

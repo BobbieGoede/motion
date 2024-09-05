@@ -3,10 +3,10 @@ import { resolve } from 'node:path'
 export default defineNuxtConfig({
   theme: '@nuxt-themes/docus',
   alias: {
-    '@vueuse/motion': resolve(__dirname, '../src/index.ts'),
-    '@vueuse/motion/nuxt': resolve(__dirname, '../src/nuxt/src/module.ts'),
+    '@goede/motion': resolve(__dirname, '../src/index.ts'),
+    '@goede/motion/nuxt': resolve(__dirname, '../src/nuxt/src/module.ts'),
   },
-  modules: ['@vueuse/motion/nuxt'],
+  modules: ['@goede/motion/nuxt'],
   features: {
     devLogs: false,
   },

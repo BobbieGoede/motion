@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { useMotion } from '@vueuse/motion'
+import { useMotion } from '@goede/motion'
 
 const bigBottomCircle = ref<SVGElement>()
 const smallBottomCircle = ref<SVGElement>()

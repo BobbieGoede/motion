@@ -15,7 +15,7 @@ export default defineConfig({
   resolve: {
     alias: [
       {
-        find: '@vueuse/motion',
+        find: '@goede/motion',
         replacement: resolve(__dirname, '../../src/index.ts'),
       },
     ],

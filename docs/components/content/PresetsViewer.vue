@@ -30,7 +30,7 @@ import {
   slideVisibleOnceTop,
   slideVisibleRight,
   slideVisibleTop,
-} from '@vueuse/motion'
+} from '@goede/motion'
 import PresetSection from './PresetSection.vue'
 
 const presets = {

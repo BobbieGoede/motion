@@ -1,4 +1,4 @@
-import { MotionPlugin } from '@vueuse/motion'
+import { MotionPlugin } from '@goede/motion'
 import { defineNuxtPlugin, useRuntimeConfig } from '#imports'
 
 export default defineNuxtPlugin(

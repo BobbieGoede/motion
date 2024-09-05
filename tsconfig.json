@@ -7,10 +7,10 @@
     "module": "ESNext",
     "moduleResolution": "Node",
     "paths": {
-      "@vueuse/motion": [
+      "@goede/motion": [
         "./src/index"
       ],
-      "@vueuse/motion/nuxt": [
+      "@goede/motion/nuxt": [
         "./src/nuxt/module"
       ],
       "#app": [

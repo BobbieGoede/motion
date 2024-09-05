@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useMotion } from '@vueuse/motion'
+import { useMotion } from '@goede/motion'
 import { ref } from 'vue'
 
 const buttons = ref<SVGElement>()

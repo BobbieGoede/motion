@@ -1,5 +1,5 @@
 <script setup="props" lang="ts">
-import { useMotions } from '@vueuse/motion'
+import { useMotions } from '@goede/motion'
 import { computed, ref, watch } from 'vue'
 import DemoBox from '../components/DemoBox.vue'
 import basic from '../examples/basic'

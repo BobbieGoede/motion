@@ -8,7 +8,7 @@ export default defineBuildConfig({
     'nuxt',
     'vue',
     'defu',
-    '@vueuse/motion',
+    '@goede/motion',
     'csstype',
     '@vueuse/shared',
     'framesync',

@@ -7,8 +7,8 @@
     "preview:ssg": "vite preview"
   },
   "dependencies": {
+    "@goede/motion": "workspace:~",
     "@vueuse/head": "^2.0.0",
-    "@vueuse/motion": "workspace:~",
     "vue": "^3.4.27",
     "vue-router": "^4.3.2"
   },

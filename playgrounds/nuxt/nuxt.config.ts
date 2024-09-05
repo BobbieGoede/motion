@@ -6,10 +6,10 @@ export default defineNuxtConfig({
   },
   css: ['~/assets/pico.css'],
   alias: {
-    '@vueuse/motion': resolve(__dirname, '../../src/index.ts'),
-    '@vueuse/motion/nuxt': resolve(__dirname, '../../src/nuxt/src/module.ts'),
+    '@goede/motion': resolve(__dirname, '../../src/index.ts'),
+    '@goede/motion/nuxt': resolve(__dirname, '../../src/nuxt/src/module.ts'),
   },
-  modules: ['@vueuse/motion/nuxt', '@nuxt/content'],
+  modules: ['@goede/motion/nuxt', '@nuxt/content'],
   content: {
     highlight: {
       theme: 'one-dark-pro',

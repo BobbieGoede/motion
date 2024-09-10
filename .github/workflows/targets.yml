@@ -16,6 +16,7 @@ jobs:
       matrix:
         os: [ubuntu-latest] # macos-latest, windows-latest
         node: [18]
+        build: ['nuxt', 'vite', 'ssg']
 
     steps:
       - name: Checkout
@@ -39,11 +40,5 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Build project (Vite)
-        run: pnpm build:vite
-
-      - name: Build project (Nuxt)
-        run: pnpm build:nuxt
-
-      - name: Build project (Vite SSG)
-        run: pnpm build:ssg
+      - name: Build project (${{matrix.build}})
+        run: pnpm build:${{matrix.build}}
